@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+</head>
+<body>
+
+    <main>
+
+<h1>Fontes internas</h1>
+<p>
+    Sites para fontes externas
+    <ul><li><a href="https://www.dafont.com/pt/">DaFonts</a></li></ul>
+</p>
+<h2>Usando Font-face</h2>
+<p>Para usar fontes internas, precisa ir até um site, fazer download dos arquivo da fonte, depois descompactar o arquivo e colocar ele dentro da pasta do arquivo index do seu site.</p>
+<p>Parametro para inserir a fonte ao site</p>
+<pre><code>
+
+@font-face {
+    font-family:'Terror' ;
+    src: url('Fonts/Frightmare.ttf') 
+    format('truetype');
+           }
+
+</code></pre>
+<p>Na URL inserir o caminho onde a fonte foi instalada, no paramentro font-family dar um nome para fonte. esse nome sera usado para inserir a fonte onde desejar</p>
+<h2>Tipos de Format</h2>
+
+<ul>
+    <li>opentype (otf)</li>
+    <li>truetype(ttf)</li>
+    <li>embedded-opentyoe</li>
+    <li>truetype-att(apple advanced typography)</li>
+    <li>svg</li>
+</ul>
+<h2>Font internas</h2>
+<p>Exemplos:</p>
+
+<h3 class="h32">Fonte Aranha</h3>
+<h3 class="h31">Fonte Dias das Bruxas</h3>
+
+<h2>Como capturar fontes de sites</h2>
+<p>Para saber quais fontes o site esta usando. É só usar a extenção no google Chrome <strong>"Fontes Ninjas"</strong>.</p>
+
+    </main>
+    <footer>
+        <p> Menu:
+            <a href = "index.html" >..1</a>
+            <a href= pagina2.html>..2</a>
+           <a href="pagina3.html">..3</a>
+           <a href="pagina4.html">..4</a>
+        </p>
+        </footer>
+</body>
+</html>

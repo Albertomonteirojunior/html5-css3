@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        img.displayed{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua a imagem do seu navegador</p>
+    <!-- Para  fazer o Html redimensionar a imagem de forma a se ajustar o tamanho de acordo com o dispositivo ou tamanho de abertura do navegador, usa-se uma nova tag , que dirá para o navegador que esse arquivo é uma imagem.
+    a tag é a <PICTURE> e dentro dela vai uma tag <IMG> e dentro da tag <PICTURE> que ira dimensionar será a tag <SOURCE media=(max-width:valor px) srcset="endereço da imagem" type="tipo da imagem"-->
+        <!--ATENÇÂO colocar na tag IMG sempre a imagem padrão -->
+<picture>
+    <source media="(max-width:740px )" srcset="imagens/paisagem-p.png" type="image/png">
+    <source media="(max-width:1250px )" srcset="imagens/paisagem-m.png" type="image/png">
+    <img class="displayed" src="imagens/paisagem-g.png" alt="Imagen flexivel">
+</picture>
+
+<!--Fim Foto-->
+<h1>Reproduzindo Áudio</h1>
+<p>Vamos aprender a Reproduzir em HTML5</p>
+<audio src="midia/2009-lovers-carvings-bibio.mp3"controls autoplay></audio>
+<!--Tags para reprodução de audio no HTML5:
+<audio src="pasta/arquivo" *controls  autoplay</audio>(*para aparecer o controle do audio no navegador)
+Formatos compativeis: MP3 WAV OGG-->
+
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/Chrimas-Rock.mp3" type="audio/mpeg">
+    <source src="midia/Chrimas-Rock.mp3" type="audio/ogg">
+    <source src="midia/Chrimas-Rock.mp3" type="audio/wav">
+<p>Infelizmente seu navegador não consegue           reproduzir áudio <a href="midia/Chrimas-Rock.mp3"type="download/Chrimas-rock"> Clique aqui</a> 
+</p></audio>
+<h1>Reproduzindo Videos</h1>
+<h2>Inserido videos localmente</h2>
+<p>Esse video está hospedado no meu propio servidor</p>
+<video src="midia/lemon_hd.mp4" width="500px" poster="imagens/limao.jpg" controls loop></video>
+<!--Arquivos compativeis com os videos: MP4 webm  OGG-->
+<h1>Videos hospedado externo</h1>
+<p>esse video está hospedado externo</p>
+<video src="https://player.vimeo.com/external/542469924.sd.mp4?s=1285dfe7b444570bce81c7fadd41fa5f945da1c2&profile_id=164&oauth2_token_id=57447761" controls width="500" poster="imagens/limao.jpg"></video>
+<h1>Video do youtube</h1>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/eKSliAp6d4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+</body>
+</html>

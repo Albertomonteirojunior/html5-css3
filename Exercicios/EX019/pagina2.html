@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        a{
+            color: red;
+            text-decoration: none; 
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: rgb(8, 248, 68);
+        }
+        a::after {
+            content: '♣';/* insere um conteudo*/
+            text-decoration: none;/* tira o sublinhado*/
+            font-weight: normal;
+            color: darkgray;
+        }
+        a::before{
+            content: '♣' ;
+            color: darkgray;
+        }
+       .ul{
+           color: blue;
+       }
+       .li::before{
+           content:' ♣ ' ;
+           padding-right: 5px;
+       }
+
+    .especial::before {
+        content: '♦♦♦';
+    }
+    .especial::after{
+        content:'♦♦♦' ;
+    }
+    </style>
+</head>
+<body>
+    <h1 >Personalizando links</h1>
+    <ul type="none">
+        <li ><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo"target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com"target="_blank">Site do Curso em Video</a></li>
+    </ul>
+    <h2>Pseudo Classes</h2>
+    <P>As Pseudo classes mexe estado do elementos de uma classe</P>
+    <h2>Pseudo elementos</h2>
+    <p>Eles mexem no conteudo do elemento. ele pode agir dentro de classes etc...</p>
+    <p>Simbolo de pseudo elemento(::)</p>
+    <h2 class="especial">Simbolos em CSS3</h2>
+    <ul  class="ul"type="none">
+        <li class="li"># = ID</li>
+        <li class="li">. = class</li>
+        <li class="li">: = pseudo-class</li>
+        <li class="li">:: = pseudo-element</li>
+        <li class="li"> > = children</li>
+    </ul>
+</body>
+</html>

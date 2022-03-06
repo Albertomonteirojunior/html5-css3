@@ -1,0 +1,30 @@
+@charset "UTF-8";
+main{
+    width: 400px;
+}
+code{
+    color: blue;
+}
+
+
+
+div{
+    
+    display: inline-block; /*deixa tudo na mesma linha*/
+    background-color: bisque;  
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;/*shorthand- largura , tipo, cor*/
+}
+
+div:hover {
+    background-color: yellow;
+}
+
+.menu{
+    color: azure;
+    background-color: rgb(177, 177, 197);
+    width: 90px;
+    height: 50px;
+}

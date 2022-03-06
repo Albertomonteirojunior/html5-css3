@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*para criar variaveis em css precisa seguir o exemplo abaixo :*/
+:root{
+    --cor00:#cbe5c6;
+    --cor01:#83e1ad;
+    --cor02:#3ddc84;
+    --cor03:#2fa866;
+    --cor04:#1a5c37;
+    --cor05:#063d1e;
+    --fonte-padrao: Arial,Verdana,Helvetica, Sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family:'droid';
+    src: url(fontes/idroid.otf);
+    font-weight: normal;
+}
+
+div {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(26, 131, 16);}
+   
+span{
+    color: rgb(0, 136, 0);
+    
+}
+body {
+    background-color:#c5ebd6
+}
+main{
+    
+    padding-bottom: 1px;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 220px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+}
+main strong{
+    color:var(--cor04);
+    font-weight: bold;
+    
+}
+
+header {
+    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+    margin: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;  
+    background-image: linear-gradient(to top, rgb(11, 58, 36), rgb(17, 219, 118));}   
+    
+}
+
+h1{
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+h2{
+    color: rgb(19, 122, 88);
+    font-family: 'droid';
+    padding-left: 8px;
+    padding-right:8px ;
+    padding-top: 11px;
+}
+
+h3.cb{ 
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.226), rgba(4, 248, 126, 0.582));
+    padding-left: 8px;
+    padding-right:8px ; 
+}
+.cb {
+    
+    font-family: 'droid';
+    color: rgb(3, 124, 84);
+    background-color: rgba(127, 255, 212, 0.336);
+}
+.centro {
+    text-shadow:2px 2px 0px rgba(0,0,0,0.267) ;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+}
+.pequeno{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+    font-size:12px ;
+}
+ p {
+     font-family: Arial, Helvetica, sans-serif;
+     text-indent: 20px;
+     text-align: justify;
+     padding-left: 8px;
+     padding-right:8px ;
+     line-height: 2em;
+ }
+
+ a{
+     padding-right: 10px;
+     padding-left: 10px;
+     text-decoration: none;
+ }
+ a.externo::after{
+     content: '\1f517';
+ }
+ a:hover {
+     color: black;
+     text-decoration: underline;
+ }
+main a{
+    color: var(--cor04);
+    background-color: var(--cor01);
+    padding:2px 6px;
+}
+ img.displayed{
+
+    margin: auto;
+    width: 100%;
+   
+}
+img.robo
+{
+    margin: auto;
+    width: 100%;
+}
+
+img.robozinho {
+    display: block; /*quando da display block e poem margin auto- a imagem fica centralizada*/
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+}
+
+iframe {
+  width: 100%;
+  margin: auto;
+  
+}
+aside{
+   
+    background-color: rgba(167, 224, 205, 0.712);
+    margin: 10px;
+    border-radius: 10px;
+}
+.artic{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--cor04)
+    ;
+    color: white;
+    border-radius: 10px 10px 1px 1px;
+    padding-left: 8px;
+    padding-right:8px ; 
+}
+footer{
+    background-color: rgb(6, 58, 41);
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+}
+footer > a {
+    color: white;
+}
+footer a:hover{
+    color: var(--cor02);
+}
+li::before{
+       content: '✓';
+}
+nav > a {
+    padding: 10px 20px 10px 30px;
+    color:rgb(255, 255, 255); 
+}
+
+nav > a:hover {
+    color: rgb(6, 20, 4);
+    background-color: rgb(10, 133, 40);
+    border-radius: 5px 5px 0px 0px; 
+    padding: 10px 20px 10px 30px;
+    transition-duration: .5s;
+}
+
+ul{
+    /*columns: 2; crias duas colunas na lista*/
+    display: inline-block;
+}

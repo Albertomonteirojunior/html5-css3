@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Listas </title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <!-- As lista ordenadas usa-se a tag <ol> </ol> e dentro da <ol> usa-se a tag <li> opcional o fechamento </li>-->
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Tormar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+    <!-- Para estilizar as listas usa-se o paremtro type="" dentro da tag <ol>-->
+        <h2>Listas não ordenadas</h2>
+        <!--
+        Lista não ordenadas usa a tag <ul>
+            e dentro tag <li>.
+                 para estilizar usa o parametro usa-se type=" disc"
+        -->
+        <ul type="square"> <!--tipos de estilo ( disc...circle...square)-->
+            <li>Pão</li>
+            <li>Manteiga</li>
+            <li>Leite</li>
+        </ul>
+    <!---------------------------------------------->
+
+<h2>Misturando listas</h2>
+<!--Misturando lista, estrutura:
+<ol>
+ <li>--</li>
+  <ol type ="estilo">
+      <li>--<li>
+      <li>--<li>  
+  </ol>
+</ol>
+Misturando lista ordenadas com listas não ordenadas:
+
+<ol>
+ <li>--</li>
+  <ul type =" estilo">
+      <li>--<li>
+      <li>--<li>  
+  </ul>
+</ol>
+
+-->
+
+<h3>meus jogos favoritos</h3>
+<ol>
+    <li>Nes</li>
+    <ol type="a">
+        <li>Super Mario</li>
+        <ul style="circle">
+            <li>Jogos do mario</li>
+            <li>Jogos Donk kong</li>
+        </ul>
+        <li>Donk kong</li>
+        <li>Top Gear</li>
+    </ol>
+    
+    <li>Sens</li>
+    <ol type="a">
+        <li>Fox</li>
+        <li>Iyoche</li>
+        <li>Castle Vania</li>
+    </ol>
+    <li>PlayStation</li>
+    <ul type="square">
+        <li>God Of War</li>
+        <li>Fifa</li>
+        <li>Residente Evil</li>
+    </ul>
+</ol>
+<!-- ATALHO para mudar vairas tags de uma vez:
+Segure o ALT e selecione as tags-->
+
+<h2>Lista de Definições</h2>
+<!-- AS tag utilizadas para lista de Definição:
+
+ <dl>   
+<dt></dt> para termo
+<dd></dd> para definição
+ </dl>
+
+estrutura:
+
+<dl>(lista de definição)
+    <dt>..</dt> (termo)
+    <dd>....<dd> (definição)
+</dl>
+
+-->
+<dl>
+  <dt>Html</dt>
+  <dd>Linguagem de marcação de texto</dd>
+  <dt>Css</dt>
+  <dd>Liguagem de estilização de texto</dd>
+  <dt>Javscript</dt>
+  <dd>Linguagem de programação para sites</dd>
+</dl>
+
+</body>
+</html>

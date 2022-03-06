@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body{
+    background-color: #fbfbfc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+h1{
+color: #f6f6fa;
+background-color: #044d72b0;
+             }
+
+h2{
+  color: #000000;
+}
+p {
+  text-align: justify;
+}
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #D5ED24; }
+.My-Color-Theme-2-hex { color: #F7EA25; }
+.My-Color-Theme-3-hex { color: #F7BF25; }
+.My-Color-Theme-4-hex { color: #EDA324; }
+.My-Color-Theme-5-hex { color: #E0C22D; }
+
+#E9D0A4
