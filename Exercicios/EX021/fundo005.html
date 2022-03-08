@@ -7,6 +7,7 @@
     <title>Document</title>
     <style>
         body{
+            background-attachment: fixed;
             height: 100vh;
             background-size: cover;
             background-repeat: no-repeat;
@@ -17,7 +18,7 @@
         main{
 
             background-color:  white;
-            width: 500px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -43,6 +44,9 @@
         p{
             text-align: justify;
         }
+        p.forte{
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -67,6 +71,15 @@
             }
         </code></pre>
         <p>Imagem ao fundo de exemplo usando esses paramentros</p>
+        <h2>Fundo fixo de tela</h2>
+        <p>Para deixar o fundo fixo usa-se o paramentro </p>
+        <pre><code>
+             body{
+                background-attachment: fixed;
+                 }
+        </code></pre>
+        <p>Dessa forma o fundo não se move usando <strong>background-attachment: fixed;</strong></p>
+        <p class="forte">Shorthand - background <br>color> image> position> repeat> [size]> background-attachment </p>
     </div>
 </body>
 </html>
