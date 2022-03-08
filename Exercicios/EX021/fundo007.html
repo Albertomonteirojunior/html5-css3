@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+    body{   margin: auto;
+            max-width: 600px;
+            min-width: 250px;
+            background-color: rgb(156, 14, 149);
+        }
+    div{
+            background-color: white;
+        }
+    #container{
+    background-size: 100% 100%;
+    background-image: url('imagens/target001.png');
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: purple;
+
+}
+    #conteudo{
+    background-size: 100% 100%;
+    background-image: url('imagens/target001.png');
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    left: 50%;
+    top:50%;
+
+    transform: translate(-50%,-50%);
+}
+   strong{
+    color: blue;
+}
+   h3{ padding: 5px;
+    background-color: rgb(105, 26, 101);
+    color: white;
+}
+   h1{
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(105, 26, 101);
+    color: white; 
+}
+   pre{
+       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.288);;
+       border-radius: 10px;
+       margin: auto;
+       background-color: bisque;
+       max-width: 500px;
+      
+   }
+   footer{
+       text-align: center;
+   }
+   p{
+       text-indent: 10px;
+       padding-left: 8px;
+       padding-bottom: 10px;
+   }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    <div>
+        <h1>Configuração</h1>
+        <p>Para alinhar uma imagem dentro de uma box, utilisiza-se os seguintes paremetros:</p>
+        <pre><code>
+
+
+            <strong>#container</strong>
+                {
+                background-size: 100% 100%;
+                background-image: url('imagens/target001.png');
+                <strong>position: relative;</strong>
+                height: 96vh;
+                padding: 10px;
+                background-color: purple;
+            
+                }
+            <strong>#conteudo</strong>
+                {
+                background-size: 100% 100%;
+                background-image: url('imagens/target001.png');
+                <strong>position: absolute;</strong>
+                width: 400px;
+                height: 200px;
+                background-color: yellow;
+                left: 50%;
+                top:50%;
+            
+                <strong>transform: translate(-50%,-50%);</strong>
+                }
+        </code></pre>
+        <p>Para fazer essa configuração precisa usar esse dois parametros:
+          Dentro do conteudo precisa ser <strong>position: absolute; </strong>e depois usar o <strong>transform: translate(-50%,-50%)</strong> para fazer os ajustes da posição
+        </p>
+      <H3>Position</H3>
+      <p>Colocando o conteudo como posição absoluta dentro de um container ou caixa (box) e possivel movimentar e alinhar ele dentro da caixa( container).</p>
+      <h3>Transform:translate ( ) </h3>
+      <p>É possivel movimentar a caixa via porcentagem para fazer o alinhamento. como mostra a imagem no inicio.</p>
+    </div>
+    <footer>
+        <h3>Criado por Alberto Junior</h3>
+    </footer>
+</body>
+</html>
