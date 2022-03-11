@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+
+     body{
+         background-color: rgb(179, 179, 179);
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     footer{
+         margin-top: 10px;
+         background-color: black;
+         color: white;
+         text-align: center;
+        
+     }
+     table.ex1 {
+         width: 400px;
+         height: 400px;
+         border-collapse: collapse;
+         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
+         margin: auto;
+     }
+   
+    tr.linha2{
+        background-color: white;
+    }
+    #numero{
+        vertical-align: bottom;
+    }
+    td.dado{
+        text-align:center;
+        border: 1px solid black;
+        padding:10px;
+        
+        
+    }
+    ul{
+        background-color: bisque;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
+    }
+    h1{
+        color: white;
+        background-color: gray;
+        padding-left: 10px;
+        text-align: center;
+        
+    }
+    h2{
+        color: white;
+        background-color: gray;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    .tab2{
+        width: 500px;
+        border-collapse: collapse;
+    }
+
+   thead{
+       background-color: gray;
+       color: white;
+   }
+ .td2,th{
+     border: 1px solid black;
+     padding: 10px;
+    
+ }
+ #num{
+     text-align: right;
+ }
+
+   tfoot{
+       background-color: gray;
+       color: white;
+   }
+   pre{
+       background-color: black;
+       color: white;
+       border-radius: 5px;
+       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
+       width: 200px;
+   }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Criando Tabelas</h1>
+    <p>Todas as tabelas simples possuim uma hieraquia</p>
+    <ul type="none">
+        <li>Table = tabela</li>
+        <li>Table ROW <strong>(tr)</strong> = linha de tabela</li>
+        <li>Table READER = cabeçalho de tabela</li>
+        <li>Table DATA <strong>(td)</strong> = dado de tabela</li>
+    </ul>
+<p>Para deixar as bordas juntas da tabela usar esse parametro:</p>
+<pre><code>
+    
+td { 
+  border-collapse: collapse;
+    }
+
+</code></pre>
+    <table class="ex1">
+     <tr class="linha2">
+         <td class="dado">A1</td>
+         <td class="dado">B1</td>
+         <td class="dado">C1</td>
+     </tr>
+     <tr class="linha2">
+        <td class="dado">A2</td>
+        <td class="dado">B2</td>
+        <td class="dado">C3</td>
+    </tr>
+    <tr class="linha2">
+        <td  class="dado"id="numero">A3</td>
+        <td  class="dado"id="numero">B3</td>
+        <td  class="dado"id="numero">C3</td>
+    </tr>
+    <tr class="linha2">
+        <td class="dado">A4</td>
+        <td class="dado">B4</td>
+        <td class="dado">C4</td>
+    </tr>
+   </table>
+   <p>Temos uma propiedade chamada de vertical aling . temos o seguintes parametros dentro dessa propiedade</p>
+
+   <ul type="none">
+   <li>Vertical-aling = alinhamento vertical</li>
+   <li>Top = alinha acima</li>
+   <li>middle = alinha ao meio</li>
+   <li>bottom = alimaneto abaixo</li>
+   </ul>
+   <pre><code>
+    style
+
+    td {
+    vertical-align: bottom;
+       }
+
+   /style
+
+</code></pre>
+   <h2>Tags semanticas para tabelas</h2>
+  <p>Uso da tabelas grandes exemplo de estrutura semantica:</p>
+
+ <ul type="none">
+     <li>THEAD = cabeça da tabela</li>
+     <li>TBODY = corpo da tabela</li>
+     <li>TFOOT = Rodapé da tabela</li>
+ </ul>
+
+ <table class="tab2">
+  <thead>
+    <th> Estado</th>
+    <th>População</th>
+  </thead>
+     <tbody>
+    <tr>
+        <td class="td2" > São Paulo</td>
+        <td class="td2" id="num">45.919.049</td>
+    </tr>
+    <tr>
+         <td class="td2">Minas Gerais</td>
+         <td  class="td2"id="num">21.168.791</td>
+    </tr> 
+    <tr>
+        <td class="td2" >Rio de Janeiro</td>
+        <td class="td2" id="num">17.264.943</td>
+   </tr> 
+   <tr>
+    <td class="td2" >Porto Alegre</td>
+    <td class="td2" id="num">13.264.943</td>
+</tr>
+<tr>
+    <td class="td2" >Rio Grande</td>
+    <td class="td2" id="num">11.264.943</td>
+</tr>
+<tr>
+    <td class="td2" >Curitiba</td>
+    <td class="td2" id="num">19.264.943</td>
+</tr>
+<tr>
+    <td class="td2" >Pará</td>
+    <td class="td2" id="num">15.264.943</td>
+</tr>
+<tr>
+    <td class="td2" >Ceara</td>
+    <td class="td2" id="num">20.264.943</td>
+</tr>
+      </tbody>
+            <tfoot>
+               <th>Total de Habitantes</th>
+               <td class="td2"><strong>25.8000.36</strong></td>
+           </tfoot>
+ </table>
+
+
+   <footer>
+       Criado por Alberto Junior
+   </footer>
+</body> 
+</html>

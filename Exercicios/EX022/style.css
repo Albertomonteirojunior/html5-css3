@@ -11,7 +11,7 @@
     --fonte-h1:'Passion One', cursive;
     --fonte-texto:'Sriracha', cursive; 
 }html,body{
-    
+    max-width: 100%;
     background-color: darkgray;
 }
 header a:hover {
@@ -81,7 +81,7 @@ section.imagem {
     background-attachment: fixed;
 }
 section.imagem > p {
-
+     margin: 10px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.281);
    text-shadow: 1px 1px 0px rgb(0, 0, 0);
@@ -92,8 +92,6 @@ section.imagem > p {
 #img01{
 background-image: url('imagens/background001.jpg');
 background-position: right center;
-background-repeat: no-repeat;
-width: auto;
 background: cover;
 background-size: 100% 100%;
 }
