@@ -4,7 +4,7 @@
     <style>
 
      body{
-         background-color: rgb(179, 179, 179);
+         background-color: rgb(211, 211, 211);
          font-family: Arial, Helvetica, sans-serif;
      }
      footer{
@@ -58,10 +58,17 @@
     .tab2{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
     }
 
    thead{
-       background-color: gray;
+       background-color: rgb(8, 8, 8);
        color: white;
    }
  .td2,th{
@@ -74,7 +81,7 @@
  }
 
    tfoot{
-       background-color: gray;
+       background-color: rgb(0, 0, 0);
        color: white;
    }
    pre{
@@ -83,6 +90,18 @@
        border-radius: 5px;
        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
        width: 200px;
+   }
+   tbody > tr:nth-child(odd){
+       background-color: gray;
+       color: white;
+   }
+   tbody > tr:nth-child(even){
+       background-color: rgb(253, 253, 253);
+   }
+   thead > tr >th {
+       position: sticky;
+       top:-1px;
+       background-color: black;
    }
     </style>
 
@@ -152,56 +171,132 @@ td {
   <p>Uso da tabelas grandes exemplo de estrutura semantica:</p>
 
  <ul type="none">
-     <li>THEAD = cabeça da tabela</li>
-     <li>TBODY = corpo da tabela</li>
-     <li>TFOOT = Rodapé da tabela</li>
+     <li>CAPTION = legenda</li>
+     <li>THEAD   = cabeça da tabela</li>
+     <li>TBODY   = corpo da tabela</li>
+     <li>TFOOT   = Rodapé da tabela</li>
  </ul>
 
  <table class="tab2">
-  <thead>
-    <th> Estado</th>
-    <th>População</th>
-  </thead>
+     <caption>População das Unidades Federativas</caption>
+<thead>
+
+    <th scope="col"> Estado</th>
+    <th scope="col" style="width:50px;">População</th>
+</thead>
+
      <tbody>
+
     <tr>
+
         <td class="td2" > São Paulo</td>
         <td class="td2" id="num">45.919.049</td>
+
     </tr>
     <tr>
+
          <td class="td2">Minas Gerais</td>
          <td  class="td2"id="num">21.168.791</td>
+
     </tr> 
     <tr>
+
         <td class="td2" >Rio de Janeiro</td>
         <td class="td2" id="num">17.264.943</td>
+
    </tr> 
    <tr>
+
     <td class="td2" >Porto Alegre</td>
     <td class="td2" id="num">13.264.943</td>
+
 </tr>
 <tr>
-    <td class="td2" >Rio Grande</td>
-    <td class="td2" id="num">11.264.943</td>
+
+ <td class="td2" >Rio Grande</td>
+ <td class="td2" id="num">11.264.943</td>
+
 </tr>
 <tr>
-    <td class="td2" >Curitiba</td>
-    <td class="td2" id="num">19.264.943</td>
+
+ <td class="td2" >Curitiba</td>
+ <td class="td2" id="num">19.264.943</td>
+
 </tr>
 <tr>
     <td class="td2" >Pará</td>
     <td class="td2" id="num">15.264.943</td>
 </tr>
 <tr>
+
+    <td class="td2" >Rio Grande</td>
+    <td class="td2" id="num">11.264.943</td>
+   
+   </tr>
+   <tr>
+   
+    <td class="td2" >Curitiba</td>
+    <td class="td2" id="num">19.264.943</td>
+   
+   </tr>
+   <tr>
+       <td class="td2" >Pará</td>
+       <td class="td2" id="num">15.264.943</td>
+   </tr>
+   <tr>
+
+    <td class="td2" >Rio Grande</td>
+    <td class="td2" id="num">11.264.943</td>
+   
+   </tr>
+   <tr>
+   
+    <td class="td2" >Curitiba</td>
+    <td class="td2" id="num">19.264.943</td>
+   
+   </tr>
+   <tr>
+       <td class="td2" >Pará</td>
+       <td class="td2" id="num">15.264.943</td>
+   </tr>
+   <tr>
+
+    <td class="td2" >Rio Grande</td>
+    <td class="td2" id="num">11.264.943</td>
+   
+   </tr>
+   <tr>
+   
+    <td class="td2" >Curitiba</td>
+    <td class="td2" id="num">19.264.943</td>
+   
+   </tr>
+   <tr>
+       <td class="td2" >Pará</td>
+       <td class="td2" id="num">15.264.943</td>
+   </tr>
+<tr>
+
     <td class="td2" >Ceara</td>
     <td class="td2" id="num">20.264.943</td>
+
 </tr>
       </tbody>
             <tfoot>
-               <th>Total de Habitantes</th>
-               <td class="td2"><strong>25.8000.36</strong></td>
+               <th scope="row">Total de Habitantes</th>  <!--O scope é usado como recurso semantico para ajudar o navegador-->>
+               <td class="td2"><strong>125.8000.36</strong></td>
            </tfoot>
  </table>
-
+<p>Para deixar o  titulo da tabela estatico usar os seguintes paramentros</p>
+<p>Primeiro deixar a tag <strong>"table"</strong>com a <strong>position = relative</strong></p>
+<p>Depois  o <strong>thead</strong>:</p>
+<pre><code>
+ thead > tr >th {
+    position: sticky;
+    top:-1px;
+    background-color: black;
+ }
+</code></pre>
 
    <footer>
        Criado por Alberto Junior
