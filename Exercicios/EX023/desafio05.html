@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela responsiva</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         table{
+             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
+             border-collapse: collapse;
+             border: 1px solid black;
+         }
+         th{ padding: 10px;
+             border-collapse: collapse;
+             border: 1px solid black; 
+             background-color: gray;
+             color: white;  
+         }
+         td{
+             
+             padding: 10px;
+             border-collapse: collapse;
+             border: 1px solid black;
+         }
+         .container{
+             overflow-x: auto;
+         }
+         pre{
+             border-radius: 10px;
+             width: 200px;
+             padding: 10px;
+             background-color: black;
+             color: white;
+         }
+         span.cor{
+             color: rgb(250, 234, 165);
+         }
+         span.cor1 {
+             color: rgb(164, 255, 255);  
+         }
+         span.cor2{
+            color: rgb(214, 115, 115) ;
+         }
+    </style>
+</head>
+<body>
+<h1>Tabelas em telas pequenas</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa cum ea placeat repellat architecto accusantium tempora tempore, nemo nihil iusto illum aspernatur exercitationem maiores aperiam, deserunt eaque, at temporibus.</p>
+    
+    <div class="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+        
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IPhone</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+                <tr>
+                    <td>Home theater</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+                <tr>
+                    <td>Ipad-Mini</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+                <tr>
+                    <td>Sansung-Galaxy s20</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+                <tr>
+                    <td>PlayStation4</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+                <tr>
+                    <td>Lava louças</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+                <tr>
+                    <td>AmazonEcho</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+        
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Para deixar uma tabela responsiva, basta envelopar a <strong>"tag" Table</strong> com uma <strong>div</strong> e dar uma classe a ela , e configurar dessa forma: </p>
+    <p>EX:</p>
+    <pre><code>
+
+        <span class="cor">.container</span> {
+        <span class="cor1">overflow-x:</span> <span class="cor2">auto</span>;
+       }
+
+    </code></pre>
+</body>
+</html>
