@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isolando colunas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        td,th{
+            color: white;
+            padding: 10px;
+            border-collapse: collapse;
+            border: 1px solid black;   
+        }
+        .cnome,.cprof{
+            background-color: blue;
+        }
+        .csexo, .cidade{
+            background-color: rgb(115, 168, 248);
+        }
+        article{
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(143, 138, 132);
+        }
+        pre{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabela</h1>
+    <table>
+        <colgroup>
+              <col class="cnome">
+              <col class="csexo">
+              <col class="cidade">
+              <col class="cprof">
+        </colgroup>
+        <caption> Cadastro</caption>
+      <thead>
+         <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>idade</th>
+            <th>Profissão</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Ana Maria</td> 
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+         </tr>
+         <tr>
+            <td>Claudio</td> 
+            <td>M</td>
+            <td>30</td>
+            <td>Artista</td>
+         </tr>
+         <tr>
+            <td>Maria</td> 
+            <td>F</td>
+            <td>18</td>
+            <td>Atriz</td>
+         </tr>
+         <tr>
+            <td>Gustavo</td> 
+            <td>M</td>
+            <td>20</td>
+            <td>Jogador</td>
+         </tr>
+         <tr>
+            <td>Fernanda</td> 
+            <td>F</td>
+            <td>18</td>
+            <td>Motorista</td>
+         </tr>
+         <tr>
+            <td>Flavio</td> 
+            <td>M</td>
+            <td>21</td>
+            <td>ator</td>
+         </tr>
+         <tr>
+            <td>João</td> 
+            <td>M</td>
+            <td>28</td>
+            <td>Programdor</td>
+         </tr>
+     </tbody>
+
+    </table>
+    <article>
+        <h3>Configuração de colunas izoladas</h3>
+        <p>Para selecionar uma coluna existe uma nova tag chamada <strong>colgroup.</strong></p>
+        <p>EX:</p>
+        <pre><code>
+            colgroup
+                col class="cnome"
+                col class="csexo"
+                col class="cidade"
+                col class="cprof"
+           /colgroup
+        </code></pre>
+        <p>Para usar ela, precisa estar dentro de <strong> table </strong>depois usar a tag <strong>colgroup</strong> em seguida criar as tags <strong>col</strong>e dar uma <strong>class</strong> ou <strong>id</strong> para elas. </p>
+    </article>
+</body>
+</html>

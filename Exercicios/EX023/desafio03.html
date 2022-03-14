@@ -10,6 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
          table{
+             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
              border-collapse: collapse;
              border: 1px solid black;
          }
@@ -38,60 +39,60 @@
     <table>
         <thead>
             <tr>
-        <th rowspan="2">Área</th>
-        <th rowspan="3">Disciplinas</th>
-        <th colspan="2">Notas</th>
-        <th rowspan="2">Média</th>
+        <th rowspan="2" scope="col">Área</th>
+        <th rowspan="3"scope="col">Disciplinas</th>
+        <th colspan="2" scope="colgroup">Notas</th>
+        <th rowspan="2" scope="col">Média</th>
         
     </tr>
     <tr>
-      <th>Notas 1</th>
-      <th>Notas 2</th>
+      <th scope="col">Notas 1</th>
+      <th scope="col">Notas 2</th>
     </tr>
         </thead>
         <tbody>
             <tr>
               
-               <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
+               <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td scope="row">Matemática</td>
                 
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
             </tr>
             <tr>
-                <td>Quimica</td>
+                <td scope="row">Quimica</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
             </tr>
             <tr>
-                <td>Biologia</td>
+                <td scope="row">Biologia</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
             </tr>
         </tbody>
             <tr>
-                <th colspan="4">Media de Exatas</th>
+                <th colspan="4" scope="rowgroup">Media de Exatas</th>
                 <td id="numero" class="color">0.0</td>
             </tr>
             
             <tr>
-                <th rowspan="2">Humanas</th>
-                <td>História</td>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td scope="row">História</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
             </tr>
             <tr>
-                <td>Geografia</td>
+                <td scope="row">Geografia</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
                 <td id="numero">0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Media de Humanas</th>
+                <th colspan="4" scope="row">Media de Humanas</th>
                 <td id="numero" class="color">0.0</td>
             </tr>
 </body>
