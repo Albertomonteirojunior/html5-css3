@@ -10,7 +10,7 @@
 <li><a href="https://albertomonteirojunior.github.io/html5-css3/Exercicios/EX021/fundo005.html">Background </a></li>
 
 </ul>
-<h1>Curso Anotações do curso de Javascript</h1>
+<h1>Anotações do curso de Javascript</h1>
 <ul>
 <li><a href="https://albertomonteirojunior.github.io/javscript/index.html">Javascript-Anotações</a>
 </ul>
