@@ -1,6 +1,6 @@
 # html5-css3
  
- <h3>Curso -HTML5 e CSS3</h3>
+<h3>Curso -HTML5 e CSS3</h3>
 
 <p>Lista de Exercios e Projetos feito no curso.</p>
 
