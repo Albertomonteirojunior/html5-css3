@@ -5,7 +5,8 @@
 <p>Lista de Exercios e Projetos feito no curso.</p>
 
 <ul>
-
+ <li><a href="https://albertomonteirojunior.github.io/Projeto-Cordel/index.html">Cordel </a></li>
+https://albertomonteirojunior.github.io/Projeto-Cordel/
 <li><a href="https://albertomonteirojunior.github.io/html5-css3/Exercicios/Desafio/index.html">Site Android </a></li>
 <li><a href="https://albertomonteirojunior.github.io/html5-css3/Exercicios/EX021/fundo005.html">Background </a></li>
 
